@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Scoreboard">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="theme-color" content="#1b2142">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAQWUlEQVR42u2da4xd1XXH19r7nHvue+bOwzO2x9gzfsTENjM2AjuxxcukSlEbU/ogxBIxURspjYA+1Kr90nyoWqpKNAptk0hQUpE+QhLAEBdCqJOWpASwwTYE2zUxNnT8GON53Zm597z2Xv1wx2ae9jzOnTnnnvXXyB9Gtnwe/7P2b6+19t64vP02YLGmkuBHwGJzsNgcLDYHi83BYnOw2BwsNgeLzcFic7DYHCwWm4PF5mCxOVhsDhabg8XmYLE5WGwOFpuDxeZgsdgcLDYHi80RkIj4GbA5phICGJLtweaYZAvbE9c0lvds7x4qG1KwQ9gcl5+CIMeXd11/7s/uONnWYLu+QH4obI5K2PAVNmac39xyLpXTv7Hl3GDZkJKDB5sDQAgquXLzymJznec6cNPaXsvQWnPsYHMAECABPLjzvbSl7RLevqnvVzddGLIlk0fczSEFDZXlHZsubF8/MFJCAJAGbF/bZ3sCkSNHzIEDwfbE9rV9pgmaQEpyyrCrq2dty4jjxR1LRcxR1PHE2paRXV09ThmkJARwPGxrcXd19TCWxtocUtJg2djV1dPW4jre6DCCCMqDHYylMTeHJkiZasfaXuXBZcKQgmybsTTe5pCCBkvmLet7b9/UZ5dxrAmUBmnA9jV9th9rLBUxDhuYNNUDO08BgJ403Dhl2LWlp72pZLvxxVIRWxR1fdGSd7pWFj0XxPixYxRLm9w927tLrhRxHVlEbLOiZU/s3nYmkyZPTTF0SEmuA5/b2t2QcX0V07FFxLaY0pB2d2/r1h5NGRgQwPOxMa82X1Mcdox4Bg8R52JKY155/rRRQRNYpv6DX3kvaSpNyOaAWBVTkqbWdCUPuQ50XVNsyTvxLOKLmBdTrpDGQABPYSZNu7edKXsihiOLiHkx5aoDkPZo97buhnQcsVTEvJhy1b8fZywVXEyBq6XYY4ulgospVx1ZYoulgospVx9Z4oqlgospMwke8cRSwcWUGQWPWGKp4GIKMJbG2RwzKaYwlsbUHDMspjCWxtEcMyymMJbGzhwzL6YwlsbOHLMqpjCWxsgcsy2mzBBLW/OO69f+yCK4mDJbLM1m6J6tZ4ad2l/yJLiYMtvg4bv0+e3dHU21v15ScDFl1uOUi0ubvDu31P56ScHFlDkQrvJhx5raXy8puJgyh4AUk/WSgospc9Doesla38ZDcDFlbpOgOGzjIbiYMtf0Se1v4yG4mDJ3LK31bTwEF1MYS2vZHIiA8NGPEGD7YvuaAIopM8LSNX22L4QYdw21QakiGq8cK2+dDElG5U9JhiBTEgB4Cn09+qM0DtuyvbG0a0sAxZQZYemWnvbG0rAtlf7oMjyFAGCOv1pDkhCEk24ttDIWfh4BCEDjfiWRAMfwAoKncOz8kwAEQrksx04dEUARFtJeIeNpjQgEAFLCxSFzz47utia3OIRGNc3x0TYeO7offrGjkPWUGr0DIWhgxLw4nJD40U77RJA0dSqhtR57u1BxORGM/a0inPCUgGCBhy5c3n7bQrzyS/fs+GLyKRZDtkEw8ZXXj3nlKKDsyG2r+29YPei6UJk7CoSSKz6xuv+G1UXXARSVf06aMGUq06CFOQABETwfy54USJUbJg0JCw6czP/8ZCGdGCViTZBIwIGTda+eLKQsRXqcjfpL5lgbIUAuOcUsyzL05EdaPRsFYA4C8JUQSFd45ZX/SyAtq7fH/k1NaBn67hvPJgxdeTbTvXKlsZDxrfREC4IHjgs45vkggKIFPTkFEeT4CyACKwFgTrxapwT9I4YUV7IRIri+ePL1ZY4vJjyrswNJTeO+wiltpAkNGcAMar7mqETFQtobdgwpRj08+ZVX7JIw9N03nrUMGsuJAqmpXo37IKZ55b4GX+FHIQoBCAQCCoLxMXnhB/IJgwIgkEZNMOFqDUmGmIGNCC4OyLH9RALB8fHJ15e5Y/awm2wjAlQas5bfXzJ9Pe8WhXmaAwF8jV/73C9+Z2tPT79RuQ2a8pUDAIBrT/FNO/6E7y4sr3xxbAQACJZBk+NTIjnF11mxEcLo1Kyl4H/3tZYH/22jIeYbPedtDgTPx3RCfem29++/7ZRhgOePxthxr3w6ECEABD6gYMqQPO7bmBIvLtmoMpKaBvg+/P2P27/x45UlV86fumS+0D7vGR0ojXvfbP3lhcyvb75QCYAAIBGEGP+DE3MSyM6YPiRPflZiqkeqCTyFpgGK8Av/1Pm1l9rTlpYyAOoKwByVO2nMegffr3/3XGbnxt66pHZ95NOOFkZaY9aiomN86Z837T3cuqLB1hoDwfFgzAEASmM2qY6dyz3xs7b1S4c2rCyVbJR8nEuV5SnM5+nFtxrvfOSGo+fy9WnPU4E99MDMAQBEaJm67BnPvNm6aXlx48qS7WDN5JJDCLaaMJ+nHx5uvPexLk/LdEKpQEuAQZqj4o+E1IT4zBut61uGN7SNKAWa2B/BN04LhHQS9h1q/sLjnVKCJbUKeilNMBnSCRJIirDkyF/rvPDofW+RJk+hwedxBiRfoykJBf7et67bd2RJ2lISqRqLrAKOHJdTEgIhaeqDp+uOn83cdUNPOgFljxE1GGfkU0QIex7tfOZQa0PGA0CqzvK7qpjj8hCTT6nD/5d//WR9W6O9bmm57KBgRJ2PMxTms/TyicKD/7rhR0ebl+Q8v5p9RlU0RyWPnrXUiZ7s9w8s7Wwb3MCIOm/8fPFI42e/seVUb6YhXV1nVN0cFX+kEwoQn2ZEDQI/73u805CQSSi/+r2JVQFSRtQo4uciRA5G1Kjg56KZgxE1/Pi5yOaYElFHyqLSWckaW5L1fFFXt6D4ufjmGIuoTx1s3bisuGlNybNHq/+s0YYPgHwDvfBG472PdZnGAuFnKMxR8YcUpAlfeHuJY4sb2wdMA5Rmf4AmMA1QGv/u+Y6v7P2YJjSrkBcPtTkqiGpIIMBnD7Wc+jC96/oLhgBPxRpRlUbLBEL83W9d98j+9lxSGQIWcfOxRTPH5Uanxqx38HT9iXOZnRt780ntxLURRGnMWDRYacs41LqiYKuA2jIiaY7pGkHihqij+Fm1towIm2NCI0jcEHUsfn6+Om0Z0TbH5UaQuCHqZPxMGouGn+E1RwwRNWz4GWpzxApRQ4ifYTdHTHqVq9oVXOPmqOFe5QXoCq59c9Rkr/LCdAVD5Po5IPaNIIvYllGDkeMKjSB21BpB1KK2ZdSsOaZrBKls0BCR5YqQy8AitmXUuDkuN4K825N98rWlG5YNrW8ruVGIH0pjKgXPH26+++ubP+jLFNKRcQYs/J5g8xy269Ke4wmlo7Q2HwGUBssky/R8hbybYBWPXUon/FvXX/QD3eu+qnsp+y7cuv5iOuFHbiNsEa39Rh1fbO0YQClUdOYrigCl2Nox4PgR20VfROtMrmFHdq4o5rJV2dG8StHO8zGXVZ0risOOjNYu6SJCY4rnY3PW7VxR9B2I0FOWknwHOlcUm7OuF6ljA0W0trBJmnpbR7/yo5QnrZzstK2jP2lGbAt9EaXjYX2xtaNfmqg0QMRqsCBN3NrRb0cKOwQDB2NHtM0RXeCINHYIBg7GjohHjigDR3SxQzBwMHZE2BxRB47oYodg4GDsiHLkiD5wRBQ7BAMHY0dUzVEbwBFR7BAMHIwdkY0ctQIcUcQOwcAxtk3VV1Vckxg57BAMHDB6wCVmLcrXEQJUbwlatLBDMHBoQomQb6CXjjb85VOrESCXIa86ISRa2GGEvDt32JE71vVKE5WecKpxYBunZJN0ftB8Yn/bP+xf1d2fOni67g8/ffqWjX32MPgaRdAmURqlidevGnjpneZ8ylchtkio161IAUNl44s3f7Dj2oFyOciF9gSgFCYMsCz4weHmu7+55fm3WxJSN+fcd87m/uPIEt+Djy0dacgq1w9yjyGsbD2b0x8OmD98e0kmqcK8IjK85kAAX4nGrPvXdx1PChXgCaNKo0DIZqF/xPz9Jzb+zfNrNGE+5QOhpzFjKSL80S+WfPfA0lVNpQ1tJSDwfEQRzAWgAPKhrWA//eZS25VhXq0QaubQAKmESlsq0B0QIJchAHzouY6bH9q273BLLqlMSZV5SoVGEaAx5w47xr2Pde157LqiY+ZzAYNq2lKpRNjn5uGNHIakvhHzizd/8Omu3lIQY4rSaBpgmvCT441/+r31j758jRCYNNWUC5o1oRRgGfROd+77B1qLJWNbx0A2TY4331GmMgWrz+uLRXP/saZcKrwjixHy/RfyyQAmfEqjQMomqbdk/vG/X7v3UKsUtLze9pW4wou5hKv+QDnxlWfXvfpe/f2fev/mdb1ageujnN96O0TIJ32BxJFjjsDRkPH+9rePWfMAjkoCI5eiRAJ+cLj5t/5xy1vddbmkskztazHzPSDq096Jnux3Xlt24nzmlo/31aeU54OmOa7kRgGkYFVT+ak3Qo0dRsiBI5VQ80lgGIIy9fSTtxseeWnVyycaTEnZpK80wmwiOQF4SuSSPhHuO9Lys3cLX73n6Gc2f0iaimU055qaq9zdkGNIjhwLCRyXRgS4OGx+/T9X/vn3rj12LptP+mIeezkSIQEkTV325NNvtr56sr6l3lm/quzasw4hUcEOo8aAo5LAsEwyTXjucPMffefjPYPJurRXyHiBzDWURlNSQur9R5sOnqr78s73H9h5Kpem4RLMdj+78GNHGCPHnIFjugQGEQb7aRJg2lIEuO/wkiPd+ea8u3pJuZLgmmEIiQR2GLUBHERAALkMlcr40HPt335l+fnBZC6pAKBK+6VU4tDygv3TE43/dbzpzs3nH77nWGPaKzmjp8nUAHaEMXLMFjhmlcAIvGiXNLVl0Dtncv/yyrL25tKmFaWEhLJ7lcuOBHYYkQaOuSUwqhFCskl/xDXue7zzpnV9D3zq9K3X9Y0MXj2EhBw7Qhc5Zggc809gQND7HUoBCamPnc298Faz64irZlTDjx1GFIEjqARG4A0ABFjIeJrwL55Z9/OTM8qohhk7Qhc5rgwc1UhgBB5CAGaUUQ0/dhhRAY5qJzAg4HMRps2oGnKcBcKMHeGKHNMBx4IlMIINIVNkVFeWtQeKsGL9kGOHEXLgWPgERuBzmTEZ1fr7bz917ye7W+u8EfvS1xBi7AhX5JgAHACLlsAIfHv/tKX0VA1mSocXO4xwAgcREkEutZgJjMBDyNgGs8909Tz82WPNdV5xCCtDZAixI0SR4zJw/NVdxxuyfjIcCYwqnNM+rsHsk2v6LQtaMvbeQ6HDDiNkO0FjOqHalzj//b+Fr77Y8dMThTAkMKqzHmK0weyVk4U/ueO9m9b2pxOqaJsSiCPHlAsRqGibuz9x5tSF9Je/vfHE+UyoEhjVOGSokPaOnc09+0ZrXcpvyrv/88uGtBUiogrXMV4EYEn94XAin/QNSUrX/pHUUpCvsGgbzVnXUeGazIqwFVZsXzRkPIEQB2dcTuE0ZDzbD111JYSzlbjYYlzyV4fx1CkBLBabg8XmYLE5WGwOFpuDxeZgsTlYbA4Wm4PF5mCx2BwsNgeLzcFic7DYHCw2B4vNwWJzsNgcLDYHi8XmYLE5WGwOVvD6f+iNZU2GmcybAAAAAElFTkSuQmCC">
+<title>Star Scoreboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* Layout: sticky header and tabs, summary tiles first, then goals as big tap targets. One bright visual world. */
+  --ink:#1b2142; --muted:#5f6789; --paper:#eef1f8; --card:#ffffff; --line:#dde2ef;
+  --accent:#3552f2; --accent-soft:#e7ebff;
+  --star:#f5a700; --star-soft:#fff2cc;
+  --good:#0f8f65; --good-soft:#dcf4e9; --bad:#d3344a; --bad-soft:#fde3e7;
+  --display:"Baloo 2",ui-rounded,"SF Pro Rounded","Arial Rounded MT Bold",system-ui,sans-serif;
+  --body:"Nunito",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --r:18px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;-webkit-text-size-adjust:100%}
+body{min-height:100%;padding-bottom:40px}
+h1,h2,h3{font-family:var(--display);margin:0;line-height:1.1;text-wrap:balance}
+h2{font-size:1.35rem}
+h3{font-size:1.1rem}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer;-webkit-tap-highlight-color:transparent}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.num{font-variant-numeric:tabular-nums}
+.muted{color:var(--muted)}
+.small{font-size:.88rem}
+
+/* header */
+.top{position:sticky;top:0;z-index:20;background:var(--ink);color:#fff;padding:10px max(16px,env(safe-area-inset-right)) 0 max(16px,env(safe-area-inset-left))}
+.top-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap;max-width:1180px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px;flex:1;min-width:200px}
+.brand h1{font-size:1.6rem;font-weight:800}
+.brand .who{font-family:var(--body);font-weight:600;font-size:.9rem;opacity:.75}
+.pill{display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:4px 10px;font-size:.8rem;font-weight:700;white-space:nowrap}
+.sync{background:rgba(255,255,255,.12)}
+.sync i{width:8px;height:8px;border-radius:50%;background:#9aa3c7;display:inline-block}
+.sync.live i{background:#3ee6a4}
+.sync.warn i{background:#ffc547}
+.modebtn{border:0;border-radius:999px;padding:8px 14px;font-weight:800;min-height:44px;display:inline-flex;align-items:center;gap:8px}
+.modebtn.child{background:var(--star);color:var(--ink)}
+.modebtn.parent{background:#fff;color:var(--ink)}
+.tabs{display:flex;gap:4px;max-width:1180px;margin:10px auto 0;overflow-x:auto;scrollbar-width:none}
+.tabs a{color:#cfd5f2;text-decoration:none;font-weight:800;padding:12px 16px;border-radius:14px 14px 0 0;white-space:nowrap;min-height:48px;display:flex;align-items:center;gap:6px}
+.tabs a[aria-current="page"]{background:var(--paper);color:var(--ink)}
+
+main{max-width:1180px;margin:0 auto;padding:18px max(16px,env(safe-area-inset-left));display:grid;gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px}
+.card-h{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px;flex-wrap:wrap}
+.grid{display:grid;gap:14px}
+.g-hero{grid-template-columns:1.3fr 1fr 1fr}
+.g-2{grid-template-columns:1fr 1fr}
+.g-goals{grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+.g-rewards{grid-template-columns:repeat(auto-fill,minmax(210px,1fr))}
+@media (max-width:820px){.g-hero{grid-template-columns:1fr 1fr}.g-hero>.hero-main{grid-column:1/-1}.g-2{grid-template-columns:1fr}}
+@media (max-width:440px){.g-hero{grid-template-columns:1fr}}
+
+/* buttons */
+.btn{border:1px solid var(--line);background:var(--card);border-radius:14px;padding:10px 14px;font-weight:800;min-height:44px;display:inline-flex;align-items:center;justify-content:center;gap:6px}
+.btn:active{transform:scale(.97)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn.good{background:var(--good);border-color:var(--good);color:#fff}
+.btn.bad{background:var(--bad);border-color:var(--bad);color:#fff}
+.btn.ghost{background:transparent}
+.btn.sm{min-height:36px;padding:6px 10px;font-size:.88rem;border-radius:10px}
+.btn[disabled]{opacity:.45;cursor:not-allowed;transform:none}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+
+/* hero */
+.hero-main{background:var(--ink);color:#fff;border:0;position:relative;overflow:hidden}
+.hero-main .label{opacity:.75;font-weight:700}
+.bignum{font-family:var(--display);font-size:4.2rem;font-weight:800;line-height:1;display:flex;align-items:center;gap:10px}
+.bignum svg{width:56px;height:56px}
+.hero-main .sub{font-size:1.15rem;font-weight:700;margin-top:6px}
+.hero-main .sub b{color:var(--star)}
+.stat .v{font-family:var(--display);font-size:2.1rem;font-weight:800;line-height:1.1}
+.stat .l{font-weight:700;color:var(--muted)}
+.chip{display:inline-flex;align-items:center;gap:4px;border-radius:999px;padding:3px 10px;font-weight:800;font-size:.9rem;white-space:nowrap}
+.chip.good{background:var(--good-soft);color:var(--good)}
+.chip.bad{background:var(--bad-soft);color:var(--bad)}
+.chip.star{background:var(--star-soft);color:#8a5c00}
+.chip.blue{background:var(--accent-soft);color:var(--accent)}
+.chip.grey{background:#eef0f6;color:var(--muted)}
+
+/* ban */
+.ban{background:var(--bad);color:#fff;border-radius:var(--r);padding:16px 18px;display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.ban h2{font-size:1.3rem}
+.ban .grow{flex:1;min-width:220px}
+
+/* screen time */
+.st-tiles{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+@media (max-width:820px){.st-tiles{grid-template-columns:repeat(2,1fr)}.st-tiles .avail{grid-column:1/-1}}
+.st-tile{border-radius:14px;padding:12px;background:var(--paper)}
+.st-tile .v{font-family:var(--display);font-size:1.6rem;font-weight:800}
+.st-tile .l{font-size:.85rem;font-weight:700;color:var(--muted)}
+.st-tile.earn .v{color:var(--good)} .st-tile.ded .v{color:var(--bad)} .st-tile.used .v{color:var(--accent)} .st-tile.rew .v{color:#a86d00}
+.st-tile.avail{background:var(--star-soft)}
+.st-bar{display:flex;height:16px;border-radius:999px;overflow:hidden;background:var(--paper);margin-top:14px}
+.st-bar span{display:block;height:100%}
+.legend{display:flex;gap:14px;flex-wrap:wrap;margin-top:8px;font-size:.85rem;font-weight:700;color:var(--muted)}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+
+/* rules */
+.rules{display:grid;gap:8px}
+.rule{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:12px;background:var(--paper);font-weight:800}
+.rule .grow{flex:1}
+.rule .dot{width:10px;height:10px;border-radius:50%;background:var(--accent);flex:none}
+.reminder{background:var(--accent);color:#fff;border:0;display:flex;flex-direction:column;justify-content:center}
+.reminder .big{font-family:var(--display);font-size:2rem;font-weight:800;line-height:1.1;margin-top:6px}
+.reminder .label{opacity:.8;font-weight:700}
+
+/* goals */
+.goal{display:flex;flex-direction:column;gap:12px;border-radius:var(--r);padding:16px;background:var(--card);border:1px solid var(--line);border-top:6px solid var(--good)}
+.goal.neg{border-top-color:var(--bad)}
+.goal-h{display:flex;align-items:center;gap:10px}
+.goal-h .ic{font-size:1.9rem;width:46px;height:46px;border-radius:12px;background:var(--paper);display:grid;place-items:center;flex:none}
+.goal-h h3{font-size:1.2rem}
+.goal .opts{display:grid;gap:8px}
+.optbtn{border:0;border-radius:14px;padding:12px 14px;min-height:56px;display:flex;align-items:center;justify-content:space-between;gap:10px;font-weight:800;text-align:left;background:var(--good-soft);color:#0a5b40}
+.optbtn.neg{background:var(--bad-soft);color:#8e1d2c}
+.optbtn .pts{font-family:var(--display);font-size:1.35rem;white-space:nowrap}
+.optbtn:active{transform:scale(.97)}
+.optbtn.locked{opacity:.6}
+.goal .today{font-size:.85rem;color:var(--muted);font-weight:700}
+
+/* rewards */
+.reward{border:1px solid var(--line);border-radius:var(--r);padding:14px;display:flex;flex-direction:column;gap:10px;background:var(--card)}
+.reward .art{height:92px;border-radius:12px;display:grid;place-items:center;font-size:2.6rem}
+.reward .art.money{background:#e2f5ec}.reward .art.treat{background:#ffeede}.reward .art.experience{background:#e9e8ff}.reward .art.badge{background:#f0f3fa}
+.reward h3{font-size:1.08rem}
+.reward .foot{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:auto;flex-wrap:wrap}
+.badgecase{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:12px}
+.bslot{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;font-weight:800;font-size:.9rem;padding:10px;border-radius:14px;background:var(--paper)}
+.bslot.off svg{filter:grayscale(1);opacity:.25}
+.bslot.pend svg{opacity:.6}
+
+/* log */
+.log{display:grid}
+.ev{display:flex;align-items:center;gap:12px;padding:10px 4px;border-bottom:1px solid var(--line)}
+.ev:last-child{border-bottom:0}
+.ev .ic{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;font-size:1.3rem;background:var(--paper);flex:none}
+.ev .grow{flex:1;min-width:0}
+.ev .t{font-weight:800}
+.ev .m{font-size:.84rem;color:var(--muted);font-weight:600}
+.filters{display:flex;gap:6px;flex-wrap:wrap}
+.filters button{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:6px 12px;font-weight:800;min-height:38px}
+.filters button[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+
+/* trends */
+.chartbox{width:100%;overflow-x:auto}
+.chartbox svg{display:block;width:100%;min-width:560px;height:auto}
+table{width:100%;border-collapse:collapse}
+th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line)}
+th{font-size:.82rem;color:var(--muted);font-weight:800;text-transform:uppercase;letter-spacing:.04em}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+.tablewrap{overflow-x:auto}
+
+/* manage */
+.mlist{display:grid;gap:8px}
+.mitem{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:12px;background:var(--paper);flex-wrap:wrap}
+.mitem .grow{flex:1;min-width:180px}
+.mitem .t{font-weight:800}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;font-weight:700}
+.kv dt{color:var(--muted)}
+.kv dd{margin:0}
+
+/* modal */
+#modal{position:fixed;inset:0;z-index:50;background:rgba(18,22,48,.55);display:grid;place-items:center;padding:16px}
+#modal[hidden]{display:none}
+.sheet{background:var(--card);border-radius:22px;padding:22px;width:min(520px,100%);max-height:calc(100% - 20px);overflow:auto;display:grid;gap:14px}
+.sheet h2{font-size:1.5rem}
+.field{display:grid;gap:6px}
+.field label{font-weight:800;font-size:.92rem}
+.field input,.field select,.field textarea{border:1px solid var(--line);border-radius:12px;padding:10px 12px;min-height:46px;background:#fff;width:100%}
+.field textarea{min-height:110px;resize:vertical}
+.optrow{display:grid;grid-template-columns:1fr 92px 44px;gap:8px;align-items:center}
+.optrow input{border:1px solid var(--line);border-radius:12px;padding:10px 12px;min-height:46px;width:100%}
+.keypad{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.keypad button{min-height:64px;border-radius:16px;border:1px solid var(--line);background:var(--paper);font-family:var(--display);font-size:1.7rem;font-weight:800}
+.dots{display:flex;justify-content:center;gap:14px;min-height:22px}
+.dots i{width:18px;height:18px;border-radius:50%;border:2px solid var(--ink)}
+.dots i.on{background:var(--ink)}
+.pinerr{color:var(--bad);font-weight:800;text-align:center;min-height:1.2em}
+.swatches{display:flex;gap:8px;flex-wrap:wrap}
+.swatches button{width:44px;height:44px;border-radius:12px;border:3px solid transparent;display:grid;place-items:center;background:var(--paper)}
+.swatches button[aria-pressed="true"]{border-color:var(--ink)}
+.presets{display:flex;gap:8px;flex-wrap:wrap}
+
+/* toast + confetti */
+#toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(140%);background:var(--ink);color:#fff;border-radius:16px;padding:12px 14px 12px 18px;display:flex;align-items:center;gap:14px;font-weight:800;z-index:60;transition:transform .25s ease;max-width:calc(100% - 32px)}
+#toast.show{transform:translateX(-50%) translateY(0)}
+#toast button{background:#fff;color:var(--ink);border:0;border-radius:10px;padding:8px 12px;font-weight:800;min-height:40px}
+#fx{position:fixed;inset:0;pointer-events:none;z-index:55}
+.empty{padding:20px;text-align:center;color:var(--muted);font-weight:700;background:var(--paper);border-radius:14px}
+.note{background:var(--star-soft);color:#6d4a00;border-radius:12px;padding:10px 14px;font-weight:700}
+.loading{padding:60px 20px;text-align:center;font-family:var(--display);font-size:1.4rem;color:var(--muted)}
+@keyframes pop{0%{transform:scale(1)}40%{transform:scale(1.12)}100%{transform:scale(1)}}
+.pop{animation:pop .4s ease}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="top-row">
+    <div class="brand">
+      <svg width="34" height="34" viewBox="-20 -20 40 40" aria-hidden="true"><path d="M0,-17 L5,-6 L17,-5 L8,3 L11,15 L0,9 L-11,15 L-8,3 L-17,-5 L-5,-6 Z" fill="#f5a700"/></svg>
+      <div><h1 id="title">Star Scoreboard</h1><div class="who" id="whoLine">Loading…</div></div>
+    </div>
+    <span class="pill sync" id="sync"><i></i><span>Saved on this iPad</span></span>
+    <button class="modebtn child" id="modeBtn" data-act="mode">Kid mode</button>
+  </div>
+  <nav class="tabs" id="tabs" aria-label="Sections">
+    <a href="#board" data-tab="board">Today</a>
+    <a href="#rewards" data-tab="rewards">Rewards</a>
+    <a href="#trends" data-tab="trends">Trends</a>
+    <a href="#log" data-tab="log">History</a>
+    <a href="#manage" data-tab="manage">Parent setup</a>
+  </nav>
+</header>
+<main id="main"><div class="loading">Getting the scoreboard ready…</div></main>
+<div id="modal" hidden></div>
+<div id="toast" role="status" aria-live="polite"><span id="toastMsg"></span><button id="toastBtn" hidden>Undo</button></div>
+<canvas id="fx" aria-hidden="true"></canvas>
+
+<script>
+(function(){
+"use strict";
+
+/* ---------- starter template (used only when there is no shared database, e.g. a file opened offline) ---------- */
+const DEFAULT_SETTINGS = {
+  childName: "My Champ",
+  minutesPerStar: 5,
+  banHours: 24,
+  penaltyText: "1 day with no screen time",
+  reminder: "Slow down by 1 second in everything",
+  houseRules: ["Integrity","Quality Behavior","Sex/Race/Religion/Culture Respect","No Violence"],
+  pin: "1234"
+};
+const STARTER = {
+  goals: [
+    {id:"dishes",name:"Clean up and wash dishes",icon:"🍽️",logger:"child",order:1,options:[{label:"Without reminder",stars:2},{label:"With reminder",stars:1}]},
+    {id:"prayer",name:"Morning prayer",icon:"🙏",logger:"child",order:2,options:[{label:"Without reminder",stars:2},{label:"With reminder",stars:1}]},
+    {id:"homework",name:"Completed homework",icon:"📚",logger:"child",order:3,options:[{label:"All done",stars:1}]},
+    {id:"exercise",name:"Exercise for 10 minutes",icon:"🏃",logger:"child",order:4,options:[{label:"Done 10 minutes",stars:1}]},
+    {id:"biting",name:"Biting finger",icon:"✋",logger:"parent",order:5,options:[{label:"Caught biting",stars:-2}]}
+  ],
+  rewards: [
+    {id:"b-ember",name:"Ember Badge",kind:"badge",cost:10,once:true,order:1,badge:{color:"#ff6a3d",glyph:"flame"}},
+    {id:"b-ripple",name:"Ripple Badge",kind:"badge",cost:15,once:true,order:2,badge:{color:"#2f86ff",glyph:"wave"}},
+    {id:"b-sprout",name:"Sprout Badge",kind:"badge",cost:20,once:true,order:3,badge:{color:"#22b36a",glyph:"leaf"}},
+    {id:"b-spark",name:"Spark Badge",kind:"badge",cost:25,once:true,order:4,badge:{color:"#f2b200",glyph:"bolt"}},
+    {id:"b-pebble",name:"Pebble Badge",kind:"badge",cost:30,once:true,order:5,badge:{color:"#8b7764",glyph:"rock"}},
+    {id:"b-gale",name:"Gale Badge",kind:"badge",cost:40,once:true,order:6,badge:{color:"#7d5cff",glyph:"swirl"}},
+    {id:"r-cards",name:"Pokémon card booster pack",kind:"treat",cost:25,once:false,order:7,icon:"🃏"},
+    {id:"r-money",name:"S$2 pocket money",kind:"money",cost:20,once:false,order:8,icon:"💰"},
+    {id:"r-dinner",name:"Pick what's for dinner",kind:"experience",cost:15,once:false,order:9,icon:"🍜"},
+    {id:"r-late",name:"Stay up 20 minutes later",kind:"experience",cost:12,once:false,order:10,icon:"🌙"},
+    {id:"r-movie",name:"Family movie night pick",kind:"experience",cost:30,once:false,order:11,icon:"🎬"}
+  ]
+};
+const GLYPHS = ["flame","wave","leaf","bolt","rock","swirl","star","heart"];
+const COLORS = ["#ff6a3d","#2f86ff","#22b36a","#f2b200","#8b7764","#7d5cff","#e23d8b","#16a3b8"];
+const KIND_LABEL = {badge:"Badge",money:"Money",treat:"Treat",experience:"Experience"};
+
+/* ---------- state ---------- */
+const state = {
+  backend:"connecting", ready:false, confirmed:false, stale:false, readOnly:false, dbError:null,
+  goals:[], rewards:[], events:[], settings:null,
+  parent:false, lastTouch:Date.now(), tab:"board", logFilter:"all"
+};
+let db = null;
+const LS_KEY = "starScoreboard.v1";
+
+const $ = s => document.querySelector(s);
+const esc = s => String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const uid = p => (p||"x")+Date.now().toString(36)+Math.random().toString(36).slice(2,7);
+const S = () => Object.assign({}, DEFAULT_SETTINGS, state.settings||{});
+const mps = () => Math.max(1, Number(S().minutesPerStar)||5);
+const round1 = n => Math.round(n*10)/10;
+const fmtStars = n => { const r = round1(n); return (Object.is(r,-0)?0:r).toLocaleString("en-SG",{maximumFractionDigits:1}); };
+const signed = n => (n>0?"+":n<0?"−":"") + fmtStars(Math.abs(n));
+function fmtMin(m){
+  m = Math.round(m); const neg = m<0; m = Math.abs(m);
+  const h = Math.floor(m/60), r = m%60;
+  const s = h ? (r ? `${h} h ${r} min` : `${h} h`) : `${r} min`;
+  return (neg?"−":"")+s;
+}
+const dayKey = ts => { const d=new Date(ts); return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0"); };
+const fmtTime = ts => new Date(ts).toLocaleString("en-SG",{weekday:"short",day:"numeric",month:"short",hour:"numeric",minute:"2-digit"});
+const sortedGoals = () => state.goals.slice().sort((a,b)=>(a.order||0)-(b.order||0));
+const sortedRewards = () => state.rewards.slice().sort((a,b)=>(a.order||0)-(b.order||0));
+const eventsDesc = () => state.events.slice().sort((a,b)=>b.ts-a.ts);
+
+/* ---------- computations ---------- */
+function totals(){
+  const t = {balance:0,earned:0,lost:0,rewardStars:0,usedMin:0,carry:0};
+  for(const e of state.events){
+    const s = Number(e.stars)||0;
+    if(e.type==="claim"){ if(e.status!=="refused"){ t.rewardStars += -s; t.balance += s; } continue; }
+    t.balance += s;
+    if(e.type==="screen"){ t.usedMin += Number(e.minutes)||0; continue; }
+    if(e.type==="carry"){ t.carry += s; continue; }
+    if(e.type==="violation") continue;
+    if(s>0) t.earned += s; else t.lost += -s;
+  }
+  return t;
+}
+function activeBan(){
+  const hrs = Number(S().banHours)||24, now = Date.now();
+  let best = null;
+  for(const e of state.events){
+    if(e.type!=="violation" || e.lifted) continue;
+    const until = e.ts + hrs*3600e3;
+    if(until>now && (!best || until>best.until)) best = {ev:e, until};
+  }
+  return best;
+}
+function dayStats(key){
+  let plus=0, minus=0, count=0;
+  for(const e of state.events){
+    if(e.type!=="goal" && e.type!=="adjust") continue;
+    if(dayKey(e.ts)!==key) continue;
+    const s = Number(e.stars)||0;
+    if(s>0){plus+=s;count++;} else minus+=-s;
+  }
+  return {plus,minus,net:plus-minus,count};
+}
+function streak(){
+  const pos = new Set(state.events.filter(e=>e.type==="goal" && e.stars>0).map(e=>dayKey(e.ts)));
+  let d = new Date(); d.setHours(12,0,0,0);
+  if(!pos.has(dayKey(d))) d.setDate(d.getDate()-1);
+  let n=0; while(pos.has(dayKey(d))){ n++; d.setDate(d.getDate()-1); }
+  return n;
+}
+function rangeStats(fromTs,toTs){
+  let plus=0, minus=0;
+  for(const e of state.events){
+    if((e.type!=="goal" && e.type!=="adjust") || e.ts<fromTs || e.ts>=toTs) continue;
+    const s=Number(e.stars)||0; if(s>0) plus+=s; else minus+=-s;
+  }
+  return {plus,minus,net:plus-minus};
+}
+function startOfDay(offsetDays){ const d=new Date(); d.setHours(0,0,0,0); d.setDate(d.getDate()+offsetDays); return d.getTime(); }
+function badgeStatus(rewardId){
+  let st = "none";
+  for(const e of state.events){
+    if(e.type==="carry" && Array.isArray(e.badges) && e.badges.includes(rewardId)) return "given";
+    if(e.type==="claim" && e.rewardId===rewardId){
+      if(e.status==="given") return "given";
+      if(e.status==="pending") st="pending";
+    }
+  }
+  return st;
+}
+
+/* ---------- storage backends ---------- */
+const store = {
+  async put(col, obj){
+    const id = obj.id || uid(col[0]); const body = Object.assign({}, obj); delete body.id;
+    if(db) return safe(()=>db.collection(col).doc(id).set(body));
+    const arr = state[col]; const i = arr.findIndex(x=>x.id===id);
+    if(i>=0) arr[i] = Object.assign({id}, body); else arr.push(Object.assign({id}, body));
+    saveLocal(); render();
+  },
+  async patch(col, id, patch){
+    if(db) return safe(()=>db.collection(col).doc(id).update(patch));
+    const o = state[col].find(x=>x.id===id); if(o) Object.assign(o, patch); saveLocal(); render();
+  },
+  async del(col, id){
+    if(db) return safe(()=>db.collection(col).doc(id).delete());
+    state[col] = state[col].filter(x=>x.id!==id); saveLocal(); render();
+  },
+  async settings(obj){
+    if(db) return safe(()=>db.doc("config/settings").set(obj));
+    state.settings = obj; saveLocal(); render();
+  }
+};
+async function safe(fn){
+  try { return await fn(); }
+  catch(e){
+    const code = e && e.code;
+    if(code==="unavailable"){ await new Promise(r=>setTimeout(r,400+Math.random()*600)); try{ return await fn(); }catch(e2){ toast("Couldn't save. Check the internet connection and try again."); return; } }
+    if(code==="invalid_argument" || code==="not_granted"){ state.readOnly = true; render(); toast("This account can only view the board. Ask the owner to share it with edit access."); return; }
+    if(code==="quota_exceeded"){ toast("The board is full. In Parent setup, start a new season to tidy old history."); return; }
+    toast("Couldn't save that. Please try again.");
+  }
+}
+function saveLocal(){
+  try{ localStorage.setItem(LS_KEY, JSON.stringify({goals:state.goals,rewards:state.rewards,events:state.events,settings:state.settings})); state.saveFailed=false; }
+  catch(e){ if(!state.saveFailed) toast("This browser isn't saving changes. Turn off Private Browsing, then make a backup in Parent setup."); state.saveFailed=true; }
+}
+function startLocal(){
+  state.backend = "local";
+  let saved = null; try{ saved = JSON.parse(localStorage.getItem(LS_KEY)||"null"); }catch(e){}
+  if(saved){ Object.assign(state, {goals:saved.goals||[],rewards:saved.rewards||[],events:saved.events||[],settings:saved.settings||null}); }
+  else { state.goals = STARTER.goals.map(g=>({...g})); state.rewards = STARTER.rewards.map(r=>({...r})); state.events=[]; state.settings = {...DEFAULT_SETTINGS}; }
+  state.ready = true; state.confirmed = true; render();
+}
+function startDb(){
+  state.backend = "db";
+  const got = {goals:false,rewards:false,events:false,settings:false};
+  const confirmed = {goals:false,rewards:false,events:false,settings:false};
+  const timer = setTimeout(()=>{ if(!state.confirmed){ state.stale = true; state.ready = true; render(); } }, 10000);
+  const done = (k, meta) => {
+    got[k] = true; if(meta && !meta.fromCache) confirmed[k] = true;
+    if(Object.values(got).every(Boolean)) state.ready = true;
+    if(Object.values(confirmed).every(Boolean)){ state.confirmed = true; state.stale = false; clearTimeout(timer); }
+    render();
+  };
+  const fail = e => { clearTimeout(timer); state.dbError = (e&&e.code)||"unavailable"; state.ready = true; render(); };
+  const mapDocs = s => s.docs.map(d=>Object.assign({id:d.id}, d.data()));
+  db.collection("goals").onSnapshot(s=>{ state.goals = mapDocs(s); done("goals", s.metadata); }, fail);
+  db.collection("rewards").onSnapshot(s=>{ state.rewards = mapDocs(s); done("rewards", s.metadata); }, fail);
+  db.collection("events").onSnapshot(s=>{ state.events = mapDocs(s); done("events", s.metadata); }, fail);
+  db.doc("config/settings").onSnapshot(d=>{ state.settings = d.exists ? Object.assign({}, d.data()) : null; done("settings", d.metadata); }, fail);
+}
+
+/* ---------- rendering helpers ---------- */
+const STAR = (size=22, fill="#f5a700") => `<svg width="${size}" height="${size}" viewBox="-20 -20 40 40" aria-hidden="true"><path d="M0,-17 L5,-6 L17,-5 L8,3 L11,15 L0,9 L-11,15 L-8,3 L-17,-5 L-5,-6 Z" fill="${fill}"/></svg>`;
+function glyphPath(g){
+  switch(g){
+    case "flame": return `<path d="M0,-15 C7,-6 11,-1 9,6 C7,12 -7,12 -9,6 C-11,0 -5,-4 0,-15 Z" fill="#fff"/><path d="M0,-2 C3,2 4,4 3,7 C2,9 -2,9 -3,7 C-4,4 -2,2 0,-2 Z" fill="currentColor" opacity=".55"/>`;
+    case "wave": return `<path d="M-13,-3 Q-6.5,-11 0,-3 T13,-3 M-13,6 Q-6.5,-2 0,6 T13,6" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round"/>`;
+    case "leaf": return `<path d="M-10,10 C-10,-6 3,-13 12,-12 C12,-2 5,10 -10,10 Z" fill="#fff"/><path d="M-9,9 L5,-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" opacity=".6"/>`;
+    case "bolt": return `<polygon points="3,-15 -9,2 -1,2 -4,15 9,-3 1,-3" fill="#fff"/>`;
+    case "rock": return `<polygon points="-11,7 -7,-6 3,-11 11,-2 9,9 -4,11" fill="#fff"/><path d="M-7,-6 L1,0 L9,9 M1,0 L3,-11" stroke="currentColor" stroke-width="2" opacity=".5" fill="none"/>`;
+    case "swirl": return `<path d="M1,1 m-2,0 a2,2 0 1,1 4,0 a5,5 0 1,1 -10,0 a8,8 0 1,1 16,0 a11,11 0 0,1 -11,11" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round"/>`;
+    case "heart": return `<path d="M0,12 C-14,2 -13,-11 -5,-11 C-2,-11 0,-8 0,-6 C0,-8 2,-11 5,-11 C13,-11 14,2 0,12 Z" fill="#fff"/>`;
+    default: return `<path d="M0,-13 L4,-4 L13,-4 L6,2 L8,12 L0,6 L-8,12 L-6,2 L-13,-4 L-4,-4 Z" fill="#fff"/>`;
+  }
+}
+function badgeSvg(b, size=72){
+  const c = (b&&b.color)||"#3552f2", g=(b&&b.glyph)||"star";
+  // original emblem: notched octagon frame, inner hexagon, white glyph
+  const oct = []; for(let i=0;i<8;i++){ const a=Math.PI/8+i*Math.PI/4; oct.push((Math.cos(a)*30).toFixed(1)+","+(Math.sin(a)*30).toFixed(1)); }
+  const hex = []; for(let i=0;i<6;i++){ const a=-Math.PI/2+i*Math.PI/3; hex.push((Math.cos(a)*22).toFixed(1)+","+(Math.sin(a)*22).toFixed(1)); }
+  return `<svg width="${size}" height="${size}" viewBox="-34 -34 68 68" style="color:${esc(c)}" aria-hidden="true">
+    <polygon points="${oct.join(" ")}" fill="#1b2142"/>
+    <polygon points="${oct.join(" ")}" fill="${esc(c)}" transform="scale(.86)"/>
+    <polygon points="${hex.join(" ")}" fill="rgba(255,255,255,.22)"/>
+    <g transform="scale(1.05)">${glyphPath(g)}</g></svg>`;
+}
+function rewardArt(r, size=72){
+  if(r.kind==="badge") return badgeSvg(r.badge, size);
+  return `<span aria-hidden="true">${esc(r.icon||"🎁")}</span>`;
+}
+
+function renderHeader(){
+  const s = S();
+  $("#title").textContent = (s.childName ? s.childName+"'s" : "Star")+" Scoreboard";
+  document.title = $("#title").textContent;
+  $("#whoLine").textContent = "1 star = "+mps()+" min screen time";
+  const sync = $("#sync"); let cls="", txt="Connecting";
+  if(state.backend==="local"){ cls=state.saveFailed?"warn":"live"; txt=state.saveFailed?"Not saving":"Saved on this device"; }
+  else if(state.backend==="db"){
+    if(state.dbError){ cls="warn"; txt="Offline, may be out of date"; }
+    else if(state.stale){ cls="warn"; txt="Reconnecting"; }
+    else if(state.confirmed){ cls="live"; txt=state.readOnly?"Live, view only":"Live sync"; }
+  }
+  sync.className = "pill sync "+cls; sync.querySelector("span").textContent = txt;
+  const mb = $("#modeBtn");
+  if(state.parent){ mb.className="modebtn parent"; mb.innerHTML = "🔓 Parent mode · Lock"; }
+  else { mb.className="modebtn child"; mb.innerHTML = STAR(20,"#1b2142")+" Kid mode"; }
+  document.querySelectorAll("#tabs a").forEach(a=>{ if(a.dataset.tab===state.tab) a.setAttribute("aria-current","page"); else a.removeAttribute("aria-current"); });
+}
+
+function banBanner(){
+  const b = activeBan(); if(!b) return "";
+  const left = b.until - Date.now(); const h = Math.floor(left/3600e3), m = Math.floor((left%3600e3)/60e3);
+  return `<section class="ban" aria-label="Screen time paused">
+    <div style="font-size:2.2rem" aria-hidden="true">⛔</div>
+    <div class="grow"><h2>No screen time until ${esc(new Date(b.until).toLocaleString("en-SG",{weekday:"short",hour:"numeric",minute:"2-digit"}))}</h2>
+    <div style="font-weight:700;opacity:.9">House rule broken: ${esc(b.ev.rule)}${b.ev.note?" · "+esc(b.ev.note):""}. ${h} h ${m} min left. Stars can still be earned.</div></div>
+    ${state.parent?`<button class="btn" style="color:var(--ink)" data-act="lift-ban" data-id="${esc(b.ev.id)}">Lift early</button>`:""}
+  </section>`;
+}
+
+function screenDashboard(t){
+  const k = mps();
+  const earnedMin = t.earned*k, dedMin = t.lost*k, rewMin = t.rewardStars*k, carryMin = t.carry*k;
+  const avail = t.balance*k;
+  const totalIn = Math.max(1, earnedMin + Math.max(0,carryMin));
+  const pct = v => Math.max(0, Math.min(100, v/totalIn*100)).toFixed(2);
+  const ban = activeBan();
+  return `<section class="card" aria-labelledby="st-h">
+    <div class="card-h"><h2 id="st-h">Screen time bank</h2>
+      <div class="row">${state.parent?`<button class="btn primary" data-act="screen-log" ${ban?"disabled":""}>Log screen time used</button>`:`<span class="chip grey">A parent logs screen time used</span>`}</div></div>
+    <div class="st-tiles">
+      <div class="st-tile earn"><div class="v num">${fmtMin(earnedMin)}</div><div class="l">Earned (${fmtStars(t.earned)} ★)</div></div>
+      <div class="st-tile ded"><div class="v num">${fmtMin(dedMin)}</div><div class="l">Deducted (${fmtStars(t.lost)} ★)</div></div>
+      <div class="st-tile used"><div class="v num">${fmtMin(t.usedMin)}</div><div class="l">Already watched/played</div></div>
+      <div class="st-tile rew"><div class="v num">${fmtMin(rewMin)}</div><div class="l">Swapped for rewards (${fmtStars(t.rewardStars)} ★)</div></div>
+      <div class="st-tile avail"><div class="v num">${fmtMin(avail)}</div><div class="l">${ban?"Available after the pause":"Available now"}</div></div>
+    </div>
+    <div class="st-bar" role="img" aria-label="Where earned screen time went">
+      <span style="width:${pct(dedMin)}%;background:var(--bad)"></span>
+      <span style="width:${pct(t.usedMin)}%;background:var(--accent)"></span>
+      <span style="width:${pct(rewMin)}%;background:#e3a21a"></span>
+      <span style="width:${pct(Math.max(0,avail))}%;background:var(--good)"></span>
+    </div>
+    <div class="legend"><span><i style="background:var(--bad)"></i>Deducted</span><span><i style="background:var(--accent)"></i>Used</span><span><i style="background:#e3a21a"></i>Rewards</span><span><i style="background:var(--good)"></i>Still available</span>${t.carry?`<span>Includes ${fmtMin(carryMin)} carried from last season</span>`:""}</div>
+  </section>`;
+}
+
+function goalCard(g){
+  const neg = (g.options||[]).every(o=>Number(o.stars)<0);
+  const lockedForKid = g.logger==="parent" && !state.parent;
+  const today = dayKey(Date.now());
+  const evs = state.events.filter(e=>e.type==="goal" && e.goalId===g.id && dayKey(e.ts)===today);
+  const sum = evs.reduce((a,e)=>a+(Number(e.stars)||0),0);
+  return `<article class="goal ${neg?"neg":""}">
+    <div class="goal-h"><div class="ic" aria-hidden="true">${esc(g.icon||"⭐")}</div>
+      <div><h3>${esc(g.name)}</h3><div class="small muted" style="font-weight:700">${g.logger==="parent"?"Parent records this":"Tap when you've done it"}</div></div></div>
+    <div class="opts">${(g.options||[]).map((o,i)=>{ const s=Number(o.stars)||0; return `<button class="optbtn ${s<0?"neg":""} ${lockedForKid?"locked":""}" data-act="log-goal" data-id="${esc(g.id)}" data-i="${i}" ${state.readOnly?"disabled":""}>
+        <span>${lockedForKid?"🔒 ":""}${esc(o.label)}</span><span class="pts num">${signed(s)} ★</span></button>`; }).join("")}</div>
+    <div class="today">${evs.length?`Today: ${evs.length} time${evs.length>1?"s":""}, ${signed(sum)} ★`:"Not yet today"}</div>
+  </article>`;
+}
+
+function evIcon(e){
+  if(e.type==="goal"){ const g=state.goals.find(x=>x.id===e.goalId); return esc((g&&g.icon)||e.icon||"⭐"); }
+  return {violation:"⛔",claim:"🎁",screen:"📺",adjust:"✏️",carry:"📦"}[e.type]||"•";
+}
+function evTitle(e){
+  switch(e.type){
+    case "goal": return `${esc(e.name)} <span class="muted" style="font-weight:700">· ${esc(e.option)}</span>`;
+    case "violation": return `House rule broken: ${esc(e.rule)}`;
+    case "claim": return `Reward: ${esc(e.name)}`;
+    case "screen": return `Screen time used: ${fmtMin(e.minutes)}`;
+    case "adjust": return `${Number(e.stars)>=0?"Bonus":"Penalty"}: ${esc(e.reason||"Parent adjustment")}`;
+    case "carry": return `Carried over from last season`;
+  }
+  return "Entry";
+}
+function evRow(e, withActions){
+  const s = Number(e.stars)||0;
+  let chip = "";
+  if(e.type==="violation") chip = `<span class="chip bad">${e.lifted?"Pause lifted":"Screen pause"}</span>`;
+  else if(e.type==="claim") chip = `<span class="chip ${e.status==="given"?"good":e.status==="refused"?"grey":"star"}">${e.status==="given"?"Given":e.status==="refused"?"Refunded":"Waiting"} · ${fmtStars(-s)} ★</span>`;
+  else chip = `<span class="chip ${s>=0?"good":"bad"} num">${signed(s)} ★</span>`;
+  const meta = `${fmtTime(e.ts)} · ${e.by==="parent"?"by parent":"by "+esc(S().childName||"kid")}${e.note?" · "+esc(e.note):""}`;
+  let acts = "";
+  if(withActions && state.parent){
+    if(e.type==="claim" && e.status==="pending") acts += `<button class="btn sm good" data-act="claim-give" data-id="${esc(e.id)}">Given</button><button class="btn sm" data-act="claim-refund" data-id="${esc(e.id)}">Refund</button>`;
+    if(e.type!=="carry") acts += `<button class="btn sm ghost" data-act="del-event" data-id="${esc(e.id)}" aria-label="Remove entry">Remove</button>`;
+  }
+  return `<div class="ev"><div class="ic" aria-hidden="true">${evIcon(e)}</div><div class="grow"><div class="t">${evTitle(e)}</div><div class="m">${meta}</div></div>${chip}${acts?`<div class="row">${acts}</div>`:""}</div>`;
+}
+
+/* ---------- views ---------- */
+function viewBoard(){
+  const t = totals(), s = S();
+  const today = dayStats(dayKey(Date.now()));
+  const wk = rangeStats(startOfDay(-6), Date.now()+1);
+  const st = streak();
+  const goals = sortedGoals();
+  const recent = eventsDesc().slice(0,5);
+  return `
+  ${banBanner()}
+  <section class="grid g-hero">
+    <div class="card hero-main"><div class="label">Star balance</div>
+      <div class="bignum num" id="balanceNum">${STAR(56)}${fmtStars(t.balance)}</div>
+      <div class="sub">= <b>${fmtMin(t.balance*mps())}</b> of screen time</div></div>
+    <div class="card stat"><div class="l">Today</div><div class="v num">${signed(today.net)} ★</div>
+      <div class="row" style="margin-top:8px"><span class="chip good">+${fmtStars(today.plus)} earned</span>${today.minus?`<span class="chip bad">−${fmtStars(today.minus)} lost</span>`:""}</div></div>
+    <div class="card stat"><div class="l">Last 7 days</div><div class="v num">${signed(wk.net)} ★</div>
+      <div class="row" style="margin-top:8px"><span class="chip star">🔥 ${st}-day streak</span></div></div>
+  </section>
+  ${screenDashboard(t)}
+  <section class="grid g-2">
+    <div class="card" aria-labelledby="hr-h"><div class="card-h"><h2 id="hr-h">House rules</h2><span class="chip bad">Break one = ${esc(s.penaltyText)}</span></div>
+      <div class="rules">${(s.houseRules||[]).map((r,i)=>`<div class="rule"><span class="dot"></span><span class="grow">${esc(r)}</span>${state.parent?`<button class="btn sm bad" data-act="violation" data-i="${i}">Rule broken</button>`:""}</div>`).join("")||`<div class="empty">No house rules yet</div>`}</div></div>
+    <div class="card reminder"><div class="label">Reminder to be better</div><div class="big">${esc(s.reminder)}</div></div>
+  </section>
+  <section aria-labelledby="g-h"><div class="card-h"><h2 id="g-h">Goals</h2>${state.parent?`<div class="row"><button class="btn" data-act="adjust">Bonus or penalty</button><button class="btn primary" data-act="goal-add">Add goal</button></div>`:""}</div>
+    ${goals.length?`<div class="grid g-goals">${goals.map(goalCard).join("")}</div>`:`<div class="empty">No goals yet. Switch to Parent mode and add one.</div>`}
+  </section>
+  <section class="card"><div class="card-h"><h2>Latest</h2><a href="#log" class="btn sm ghost">See all history</a></div>
+    <div class="log">${recent.length?recent.map(e=>evRow(e,false)).join(""):`<div class="empty">Nothing yet. Every tap on a goal shows up here.</div>`}</div></section>`;
+}
+
+function viewRewards(){
+  const t = totals();
+  const rewards = sortedRewards();
+  const badges = rewards.filter(r=>r.kind==="badge");
+  const pending = eventsDesc().filter(e=>e.type==="claim" && e.status==="pending");
+  return `
+  <section class="grid g-hero">
+    <div class="card hero-main"><div class="label">Stars to spend</div><div class="bignum num">${STAR(56)}${fmtStars(t.balance)}</div>
+      <div class="sub">Spending stars on a reward uses <b>${mps()} min</b> of screen time per star</div></div>
+    <div class="card stat"><div class="l">Badges collected</div><div class="v num">${badges.filter(b=>badgeStatus(b.id)==="given").length} / ${badges.length}</div></div>
+    <div class="card stat"><div class="l">Waiting to be given</div><div class="v num">${pending.length}</div></div>
+  </section>
+  ${pending.length?`<section class="card"><div class="card-h"><h2>Claimed, waiting for a parent</h2>${state.parent?"":`<span class="chip grey">A parent marks these as given</span>`}</div><div class="log">${pending.map(e=>evRow(e,true)).join("")}</div></section>`:""}
+  <section class="card" aria-labelledby="bc-h"><div class="card-h"><h2 id="bc-h">Badge case</h2><span class="muted small" style="font-weight:700">Collect them all</span></div>
+    ${badges.length?`<div class="badgecase">${badges.map(b=>{const st=badgeStatus(b.id);return `<div class="bslot ${st==="given"?"":st==="pending"?"pend":"off"}">${badgeSvg(b.badge,78)}<span>${esc(b.name)}</span><span class="small muted">${st==="given"?"Collected":st==="pending"?"On its way":fmtStars(b.cost)+" ★"}</span></div>`;}).join("")}</div>`:`<div class="empty">No badges set up yet</div>`}
+  </section>
+  <section aria-labelledby="rs-h"><div class="card-h"><h2 id="rs-h">Reward shop</h2>${state.parent?`<button class="btn primary" data-act="reward-add">Add reward</button>`:""}</div>
+    ${rewards.length?`<div class="grid g-rewards">${rewards.map(r=>{
+      const st = r.once ? badgeStatus(r.id) : "none";
+      const short = r.cost - t.balance;
+      let btn;
+      if(st==="given") btn = `<span class="chip good">Collected</span>`;
+      else if(st==="pending") btn = `<span class="chip star">Waiting</span>`;
+      else if(short>0) btn = `<button class="btn sm" disabled>Need ${fmtStars(short)} more ★</button>`;
+      else btn = `<button class="btn sm primary" data-act="claim" data-id="${esc(r.id)}" ${state.readOnly?"disabled":""}>Claim</button>`;
+      return `<article class="reward"><div class="art ${esc(r.kind)}">${rewardArt(r,74)}</div>
+        <div><span class="chip grey small">${KIND_LABEL[r.kind]||"Reward"}</span></div>
+        <h3>${esc(r.name)}</h3>
+        <div class="foot"><span class="chip star num">${STAR(16)} ${fmtStars(r.cost)}</span>${btn}</div></article>`;}).join("")}</div>`:`<div class="empty">No rewards yet</div>`}
+  </section>`;
+}
+
+function chartSvg(){
+  const days = 14, W=720, H=280, padL=40, padR=12, padT=18, padB=44;
+  const data = [];
+  for(let i=days-1;i>=0;i--){ const ts=startOfDay(-i); const k=dayKey(ts); data.push(Object.assign({ts,k}, dayStats(k))); }
+  const maxV = Math.max(4, ...data.map(d=>Math.max(d.plus,d.minus)));
+  const step = maxV<=6?2:maxV<=12?4:Math.ceil(maxV/3/5)*5;
+  const top = Math.ceil(maxV/step)*step;
+  const iw = W-padL-padR, ih = H-padT-padB, zeroY = padT+ih/2, sc = (ih/2)/top;
+  const bw = iw/days;
+  let g = "";
+  for(let v=-top; v<=top; v+=step){
+    const y = zeroY - v*sc;
+    g += `<line x1="${padL}" x2="${W-padR}" y1="${y}" y2="${y}" stroke="${v===0?"#9aa2c2":"#e6e9f3"}" stroke-width="${v===0?1.5:1}"/>`;
+    g += `<text x="${padL-8}" y="${y+4}" text-anchor="end" font-size="11" fill="#5f6789" font-weight="700">${v>0?"+":""}${v}</text>`;
+  }
+  let bars="", labels="", pts=[];
+  data.forEach((d,i)=>{
+    const x = padL + i*bw + bw*0.18, w = bw*0.64;
+    if(d.plus) bars += `<rect x="${x}" y="${zeroY-d.plus*sc}" width="${w}" height="${d.plus*sc}" rx="4" fill="#0f8f65"><title>${d.k}: +${fmtStars(d.plus)}</title></rect>`;
+    if(d.minus) bars += `<rect x="${x}" y="${zeroY}" width="${w}" height="${d.minus*sc}" rx="4" fill="#d3344a"><title>${d.k}: −${fmtStars(d.minus)}</title></rect>`;
+    const dt = new Date(d.ts);
+    const isToday = i===days-1;
+    labels += `<text x="${padL+i*bw+bw/2}" y="${H-padB+18}" text-anchor="middle" font-size="11" font-weight="${isToday?800:700}" fill="${isToday?"#1b2142":"#5f6789"}">${dt.toLocaleDateString("en-SG",{weekday:"short"}).slice(0,2)}</text>`;
+    labels += `<text x="${padL+i*bw+bw/2}" y="${H-padB+33}" text-anchor="middle" font-size="11" fill="#5f6789">${dt.getDate()}</text>`;
+    pts.push([padL+i*bw+bw/2, zeroY - d.net*sc]);
+  });
+  const line = `<polyline points="${pts.map(p=>p.map(n=>n.toFixed(1)).join(",")).join(" ")}" fill="none" stroke="#3552f2" stroke-width="2.5" stroke-linejoin="round"/>` +
+    pts.map((p,i)=>`<circle cx="${p[0].toFixed(1)}" cy="${p[1].toFixed(1)}" r="${i===pts.length-1?5:3}" fill="${i===pts.length-1?"#3552f2":"#fff"}" stroke="#3552f2" stroke-width="2"/>`).join("");
+  return `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Stars earned and lost each day for the last 14 days">${g}${bars}${line}${labels}</svg>`;
+}
+function viewTrends(){
+  const now = Date.now();
+  const thisFrom = startOfDay(-6), prevFrom = startOfDay(-13);
+  const cur = rangeStats(thisFrom, now+1), prev = rangeStats(prevFrom, thisFrom);
+  const rows = sortedGoals().map(g=>{
+    const c = state.events.filter(e=>e.type==="goal"&&e.goalId===g.id&&e.ts>=thisFrom);
+    const p = state.events.filter(e=>e.type==="goal"&&e.goalId===g.id&&e.ts>=prevFrom&&e.ts<thisFrom);
+    const best = (g.options||[]).reduce((m,o)=>Math.max(m,Number(o.stars)||0),-99);
+    const bestCount = c.filter(e=>Number(e.stars)===best && best>0).length;
+    return {g, c:c.length, p:p.length, cs:c.reduce((a,e)=>a+(Number(e.stars)||0),0), bestCount, multi:(g.options||[]).length>1 && best>0};
+  });
+  const viol = state.events.filter(e=>e.type==="violation"&&e.ts>=thisFrom).length;
+  const violPrev = state.events.filter(e=>e.type==="violation"&&e.ts>=prevFrom&&e.ts<thisFrom).length;
+  const arrow = (a,b,goodUp=true) => a===b?`<span class="chip grey">same</span>`:((a>b)===goodUp?`<span class="chip good">${a>b?"▲":"▼"} ${Math.abs(a-b)}</span>`:`<span class="chip bad">${a>b?"▲":"▼"} ${Math.abs(a-b)}</span>`);
+  return `
+  <section class="grid g-hero">
+    <div class="card stat"><div class="l">Stars earned, last 7 days</div><div class="v num" style="color:var(--good)">+${fmtStars(cur.plus)}</div><div class="small muted" style="font-weight:700">Week before: +${fmtStars(prev.plus)}</div></div>
+    <div class="card stat"><div class="l">Stars lost, last 7 days</div><div class="v num" style="color:var(--bad)">−${fmtStars(cur.minus)}</div><div class="small muted" style="font-weight:700">Week before: −${fmtStars(prev.minus)}</div></div>
+    <div class="card stat"><div class="l">House rules broken, last 7 days</div><div class="v num">${viol}</div><div class="small muted" style="font-weight:700">Week before: ${violPrev}</div></div>
+  </section>
+  <section class="card"><div class="card-h"><h2>Last 14 days</h2>
+    <div class="legend" style="margin:0"><span><i style="background:#0f8f65"></i>Earned</span><span><i style="background:#d3344a"></i>Lost</span><span><i style="background:#3552f2;border-radius:50%"></i>Net for the day</span></div></div>
+    <div class="chartbox">${chartSvg()}</div></section>
+  <section class="card"><div class="card-h"><h2>Goal by goal</h2><span class="muted small" style="font-weight:700">Last 7 days compared with the 7 days before</span></div>
+    <div class="tablewrap"><table><thead><tr><th>Goal</th><th class="n">Times</th><th class="n">Stars</th><th class="n">Without reminder</th><th class="n">Change</th></tr></thead><tbody>
+    ${rows.map(r=>{ const neg=(r.g.options||[]).every(o=>Number(o.stars)<0); return `<tr><td><b>${esc(r.g.icon||"")} ${esc(r.g.name)}</b></td><td class="n">${r.c}</td><td class="n">${signed(r.cs)}</td><td class="n">${r.multi?r.bestCount+" of "+r.c:"·"}</td><td class="n">${arrow(r.c,r.p,!neg)}</td></tr>`; }).join("")||`<tr><td colspan="5" class="muted">No goals yet</td></tr>`}
+    </tbody></table></div></section>`;
+}
+
+function viewLog(){
+  const f = state.logFilter;
+  const match = e => f==="all" || (f==="earned"&&(e.type==="goal"||e.type==="adjust")&&e.stars>0) || (f==="lost"&&(e.type==="goal"||e.type==="adjust")&&e.stars<0) || (f==="rules"&&e.type==="violation") || (f==="rewards"&&e.type==="claim") || (f==="screen"&&e.type==="screen");
+  const list = eventsDesc().filter(match);
+  const groups = []; let cur=null;
+  for(const e of list.slice(0,400)){ const k=dayKey(e.ts); if(!cur||cur.k!==k){cur={k,ts:e.ts,items:[]};groups.push(cur);} cur.items.push(e); }
+  const btn = (k,l) => `<button data-act="filter" data-f="${k}" aria-pressed="${f===k}">${l}</button>`;
+  return `<section class="card"><div class="card-h"><h2>History</h2>
+    <div class="filters">${btn("all","All")}${btn("earned","Earned")}${btn("lost","Lost")}${btn("rules","House rules")}${btn("rewards","Rewards")}${btn("screen","Screen time")}</div></div>
+    ${state.parent?"":`<p class="muted small" style="font-weight:700;margin:0 0 8px">Parents can remove a mistaken entry in Parent mode.</p>`}
+    ${groups.length?groups.map(g=>`<h3 style="margin:14px 0 4px">${new Date(g.ts).toLocaleDateString("en-SG",{weekday:"long",day:"numeric",month:"long"})}</h3><div class="log">${g.items.map(e=>evRow(e,true)).join("")}</div>`).join(""):`<div class="empty">Nothing here yet</div>`}
+  </section>`;
+}
+
+function viewManage(){
+  if(!state.parent) return `<section class="card" style="text-align:center;display:grid;gap:14px;justify-items:center;padding:40px 20px">
+    <div style="font-size:3rem" aria-hidden="true">🔒</div><h2>Parent setup is locked</h2><p class="muted" style="margin:0;font-weight:700">Enter the parent PIN to change goals, rewards and house rules.</p>
+    <button class="btn primary" data-act="unlock">Enter PIN</button></section>`;
+  const s = S();
+  return `
+  ${state.readOnly?`<div class="note">This account can view the board but not change it.</div>`:""}
+  <section class="card"><div class="card-h"><h2>Basics</h2><button class="btn primary" data-act="settings-edit">Edit</button></div>
+    <dl class="kv"><dt>Child's name</dt><dd>${esc(s.childName)}</dd><dt>1 star equals</dt><dd>${mps()} min screen time</dd>
+    <dt>House rule penalty</dt><dd>${esc(s.penaltyText)} (${Number(s.banHours)||24} h pause)</dd><dt>Reminder</dt><dd>${esc(s.reminder)}</dd>
+    <dt>House rules</dt><dd>${(s.houseRules||[]).map(esc).join(", ")}</dd><dt>Parent PIN</dt><dd>${"•".repeat(String(s.pin||"").length)} ${String(s.pin)==="1234"?`<span class="chip bad">Still the starter PIN 1234, please change it</span>`:""}</dd></dl></section>
+  <section class="card"><div class="card-h"><h2>Goals</h2><button class="btn primary" data-act="goal-add">Add goal</button></div>
+    <div class="mlist">${sortedGoals().map((g,i,a)=>`<div class="mitem"><span style="font-size:1.6rem" aria-hidden="true">${esc(g.icon||"⭐")}</span>
+      <div class="grow"><div class="t">${esc(g.name)}</div><div class="small muted" style="font-weight:700">${(g.options||[]).map(o=>esc(o.label)+" "+signed(Number(o.stars)||0)).join(" · ")} · ${g.logger==="parent"?"parent records":"kid records"}</div></div>
+      <div class="row"><button class="btn sm" data-act="goal-move" data-id="${esc(g.id)}" data-d="-1" ${i===0?"disabled":""} aria-label="Move up">↑</button><button class="btn sm" data-act="goal-move" data-id="${esc(g.id)}" data-d="1" ${i===a.length-1?"disabled":""} aria-label="Move down">↓</button>
+      <button class="btn sm" data-act="goal-edit" data-id="${esc(g.id)}">Edit</button><button class="btn sm ghost" data-act="goal-del" data-id="${esc(g.id)}">Delete</button></div></div>`).join("")||`<div class="empty">No goals yet</div>`}</div></section>
+  <section class="card"><div class="card-h"><h2>Rewards</h2><button class="btn primary" data-act="reward-add">Add reward</button></div>
+    <div class="mlist">${sortedRewards().map(r=>`<div class="mitem"><span style="width:44px;display:grid;place-items:center;font-size:1.6rem">${rewardArt(r,40)}</span>
+      <div class="grow"><div class="t">${esc(r.name)}</div><div class="small muted" style="font-weight:700">${KIND_LABEL[r.kind]||"Reward"} · ${fmtStars(r.cost)} ★ · ${r.once?"one time":"can claim again"}</div></div>
+      <div class="row"><button class="btn sm" data-act="reward-edit" data-id="${esc(r.id)}">Edit</button><button class="btn sm ghost" data-act="reward-del" data-id="${esc(r.id)}">Delete</button></div></div>`).join("")||`<div class="empty">No rewards yet</div>`}</div></section>
+  <section class="card"><div class="card-h"><h2>Backup</h2></div>
+    <p class="muted small" style="font-weight:700;margin:0 0 12px">Everything is saved inside this browser on this device. Save a backup file now and then, so a cleared browser or a new iPad doesn't lose his stars.${lastBackupText()}</p>
+    <div class="row"><button class="btn primary" data-act="backup">Save backup file</button><button class="btn" data-act="restore">Restore from a backup</button><input type="file" id="restoreFile" accept=".json,application/json" hidden></div></section>
+  <section class="card"><div class="card-h"><h2>Stars and seasons</h2></div>
+    <div class="row"><button class="btn" data-act="adjust">Give a bonus or penalty</button><button class="btn" data-act="new-season">Start a new season</button></div>
+    <p class="muted small" style="font-weight:700">A new season clears the history and trends but keeps the star balance and collected badges. Use it every few months to keep the board quick.</p></section>`;
+}
+
+let renderQueued = false;
+function render(){
+  if(renderQueued) return; renderQueued = true;
+  requestAnimationFrame(()=>{ renderQueued=false; doRender(); });
+}
+function doRender(){
+  renderHeader();
+  const main = $("#main");
+  if(!state.ready){ main.innerHTML = `<div class="loading">Getting the scoreboard ready…</div>`; return; }
+  let html = "";
+  if(state.backend==="db" && state.stale && !state.dbError) html += `<div class="note">Still reaching the shared board. What you see may be out of date.</div>`;
+  if(state.dbError) html += `<div class="note">The shared board can't be reached right now. Reopen the page when you're back online.</div>`;
+  const v = {board:viewBoard,rewards:viewRewards,trends:viewTrends,log:viewLog,manage:viewManage}[state.tab]||viewBoard;
+  main.innerHTML = html + v();
+}
+
+/* ---------- modal, toast, fx ---------- */
+function openModal(html, mount){
+  const m = $("#modal"); m.innerHTML = `<div class="sheet" role="dialog" aria-modal="true">${html}</div>`; m.hidden = false;
+  const sheet = m.querySelector(".sheet");
+  if(mount) mount(sheet);
+  const f = sheet.querySelector("[autofocus]"); if(f) f.focus();
+}
+function closeModal(){ const m=$("#modal"); m.hidden=true; m.innerHTML=""; }
+$("#modal").addEventListener("click", e=>{ if(e.target.id==="modal") closeModal(); });
+document.addEventListener("keydown", e=>{ if(e.key==="Escape" && !$("#modal").hidden) closeModal(); });
+function confirmBox(title, text, okLabel, okClass, onOk){
+  openModal(`<h2>${esc(title)}</h2><p style="margin:0;font-weight:600">${text}</p><div class="row" style="justify-content:flex-end"><button class="btn" data-x="cancel">Cancel</button><button class="btn ${okClass||"primary"}" data-x="ok" autofocus>${esc(okLabel)}</button></div>`, sh=>{
+    sh.querySelector('[data-x="cancel"]').onclick = closeModal;
+    sh.querySelector('[data-x="ok"]').onclick = ()=>{ closeModal(); onOk(); };
+  });
+}
+let toastTimer=null;
+function toast(msg, undoFn){
+  $("#toastMsg").textContent = msg; const b=$("#toastBtn");
+  if(undoFn){ b.hidden=false; b.onclick=()=>{ undoFn(); hideToast(); }; } else { b.hidden=true; b.onclick=null; }
+  $("#toast").classList.add("show"); clearTimeout(toastTimer); toastTimer=setTimeout(hideToast, undoFn?8000:4000);
+}
+function hideToast(){ $("#toast").classList.remove("show"); }
+const reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+function confetti(){
+  if(reduceMotion) return;
+  const c = $("#fx"), ctx = c.getContext("2d"); const dpr = window.devicePixelRatio||1;
+  c.width = innerWidth*dpr; c.height = innerHeight*dpr; ctx.scale(dpr,dpr);
+  const cols = ["#f5a700","#3552f2","#0f8f65","#ff6a3d","#7d5cff"];
+  const parts = Array.from({length:90},()=>({x:innerWidth/2,y:innerHeight*0.45,vx:(Math.random()-.5)*14,vy:-Math.random()*14-4,r:Math.random()*6+4,c:cols[Math.floor(Math.random()*cols.length)],a:Math.random()*6,star:Math.random()<.35}));
+  let f=0;
+  (function tick(){
+    ctx.clearRect(0,0,innerWidth,innerHeight);
+    for(const p of parts){ p.vy+=0.45; p.x+=p.vx; p.y+=p.vy; p.a+=0.15; ctx.save(); ctx.translate(p.x,p.y); ctx.rotate(p.a); ctx.fillStyle=p.c;
+      if(p.star){ ctx.beginPath(); for(let i=0;i<10;i++){const rr=i%2?p.r*.45:p.r*1.2, an=i*Math.PI/5; ctx.lineTo(Math.cos(an)*rr,Math.sin(an)*rr);} ctx.fill(); } else ctx.fillRect(-p.r/2,-p.r/4,p.r,p.r/2);
+      ctx.restore(); }
+    if(++f<110) requestAnimationFrame(tick); else ctx.clearRect(0,0,innerWidth,innerHeight);
+  })();
+}
+function popBalance(){ const el=$("#balanceNum"); if(el){ el.classList.remove("pop"); void el.offsetWidth; el.classList.add("pop"); } }
+
+/* ---------- parent mode ---------- */
+function requireParent(fn){
+  if(state.parent){ state.lastTouch=Date.now(); fn(); return; }
+  pinModal(fn);
+}
+function pinModal(after){
+  let entry = "";
+  const pin = String(S().pin||"1234");
+  openModal(`<h2 style="text-align:center">Parent PIN</h2><div class="dots" id="dots"></div><div class="pinerr" id="pinerr"></div>
+    <div class="keypad">${[1,2,3,4,5,6,7,8,9].map(n=>`<button data-k="${n}">${n}</button>`).join("")}<button data-k="c" aria-label="Cancel" style="font-size:1rem">Cancel</button><button data-k="0">0</button><button data-k="b" aria-label="Delete" style="font-size:1.2rem">⌫</button></div>`, sh=>{
+    const dots = sh.querySelector("#dots");
+    const draw = ()=>{ dots.innerHTML = Array.from({length:pin.length},(_,i)=>`<i class="${i<entry.length?"on":""}"></i>`).join(""); };
+    draw();
+    sh.querySelector(".keypad").onclick = e=>{
+      const k = e.target.closest("button"); if(!k) return; const v = k.dataset.k;
+      if(v==="c"){ closeModal(); return; }
+      if(v==="b"){ entry = entry.slice(0,-1); draw(); return; }
+      entry += v; draw();
+      if(entry.length>=pin.length){
+        if(entry===pin){ state.parent=true; state.lastTouch=Date.now(); closeModal(); render(); if(after) after(); }
+        else { sh.querySelector("#pinerr").textContent="That PIN didn't match"; entry=""; setTimeout(draw,150); }
+      }
+    };
+  });
+}
+setInterval(()=>{ if(state.parent && Date.now()-state.lastTouch>5*60e3 && $("#modal").hidden){ state.parent=false; render(); toast("Parent mode locked after 5 minutes"); } }, 15000);
+setInterval(()=>{ if(activeBan() || state.tab==="board") render(); }, 60000);
+
+/* ---------- actions ---------- */
+function logGoal(g, i){
+  const o = (g.options||[])[i]; if(!o) return;
+  const stars = Number(o.stars)||0;
+  const id = uid("e");
+  store.put("events", {id, type:"goal", ts:Date.now(), goalId:g.id, name:g.name, option:o.label, stars, by:state.parent?"parent":"child"});
+  if(stars>0){ confetti(); toast(`${signed(stars)} ★ for ${g.name}. Great job!`, ()=>store.del("events", id)); }
+  else toast(`${signed(stars)} ★ for ${g.name}`, ()=>store.del("events", id));
+  setTimeout(popBalance, 60);
+}
+function goalForm(g){
+  const isNew = !g; g = g ? JSON.parse(JSON.stringify(g)) : {name:"",icon:"⭐",logger:"child",options:[{label:"Done",stars:1}]};
+  openModal(`<h2>${isNew?"Add a goal":"Edit goal"}</h2>
+    <div class="field"><label for="gf-name">Goal</label><input id="gf-name" value="${esc(g.name)}" placeholder="e.g. Read for 15 minutes" autofocus></div>
+    <div class="row" style="align-items:end"><div class="field" style="width:110px"><label for="gf-icon">Icon</label><input id="gf-icon" value="${esc(g.icon||"")}" maxlength="4" style="text-align:center;font-size:1.4rem"></div>
+    <div class="field" style="flex:1;min-width:180px"><label for="gf-logger">Who records it</label><select id="gf-logger"><option value="child" ${g.logger!=="parent"?"selected":""}>Kid taps it himself</option><option value="parent" ${g.logger==="parent"?"selected":""}>Parent only</option></select></div></div>
+    <div class="field"><label>Ways to score (use a minus number to take stars away)</label><div id="gf-opts" style="display:grid;gap:8px"></div>
+      <button class="btn sm" id="gf-addopt" type="button" style="justify-self:start">Add another way</button></div>
+    <div class="pinerr" id="gf-err"></div>
+    <div class="row" style="justify-content:flex-end"><button class="btn" id="gf-cancel">Cancel</button><button class="btn primary" id="gf-save">Save goal</button></div>`, sh=>{
+    const box = sh.querySelector("#gf-opts");
+    const draw = ()=>{ box.innerHTML = g.options.map((o,i)=>`<div class="optrow"><input aria-label="Label" data-i="${i}" data-f="label" value="${esc(o.label)}" placeholder="e.g. Without reminder"><input aria-label="Stars" data-i="${i}" data-f="stars" type="number" step="0.5" inputmode="decimal" value="${esc(o.stars)}"><button class="btn sm ghost" data-rm="${i}" aria-label="Remove" ${g.options.length<2?"disabled":""}>✕</button></div>`).join(""); };
+    draw();
+    box.addEventListener("input", e=>{ const t=e.target; if(t.dataset.f) g.options[+t.dataset.i][t.dataset.f] = t.dataset.f==="stars"?t.value:t.value; });
+    box.addEventListener("click", e=>{ const b=e.target.closest("[data-rm]"); if(b){ g.options.splice(+b.dataset.rm,1); draw(); } });
+    sh.querySelector("#gf-addopt").onclick = ()=>{ g.options.push({label:"",stars:1}); draw(); };
+    sh.querySelector("#gf-cancel").onclick = closeModal;
+    sh.querySelector("#gf-save").onclick = ()=>{
+      const name = sh.querySelector("#gf-name").value.trim();
+      const opts = g.options.map(o=>({label:String(o.label||"").trim()||"Done", stars:Number(o.stars)})).filter(o=>isFinite(o.stars) && o.stars!==0);
+      if(!name){ sh.querySelector("#gf-err").textContent="Give the goal a name"; return; }
+      if(!opts.length){ sh.querySelector("#gf-err").textContent="Add at least one way to score with a star value that isn't 0"; return; }
+      const order = isNew ? (Math.max(0,...state.goals.map(x=>x.order||0))+1) : g.order;
+      store.put("goals", {id:g.id, name, icon:sh.querySelector("#gf-icon").value.trim()||"⭐", logger:sh.querySelector("#gf-logger").value, options:opts, order});
+      closeModal(); toast(isNew?"Goal added":"Goal saved");
+    };
+  });
+}
+function rewardForm(r){
+  const isNew = !r; r = r ? JSON.parse(JSON.stringify(r)) : {name:"",kind:"treat",cost:10,once:false,icon:"🎁",badge:{color:COLORS[0],glyph:"star"}};
+  r.badge = r.badge || {color:COLORS[0],glyph:"star"};
+  openModal(`<h2>${isNew?"Add a reward":"Edit reward"}</h2>
+    <div class="field"><label for="rf-name">Reward</label><input id="rf-name" value="${esc(r.name)}" placeholder="e.g. Trip to the playground" autofocus></div>
+    <div class="row" style="align-items:end"><div class="field" style="flex:1;min-width:150px"><label for="rf-kind">Type</label><select id="rf-kind">${Object.keys(KIND_LABEL).map(k=>`<option value="${k}" ${r.kind===k?"selected":""}>${KIND_LABEL[k]}</option>`).join("")}</select></div>
+    <div class="field" style="width:130px"><label for="rf-cost">Cost in stars</label><input id="rf-cost" type="number" min="1" step="1" inputmode="numeric" value="${esc(r.cost)}"></div></div>
+    <div id="rf-badge" class="field"><label>Badge colour</label><div class="swatches" id="rf-colors"></div><label>Badge symbol</label><div class="swatches" id="rf-glyphs"></div>
+      <div style="display:grid;place-items:center" id="rf-prev"></div></div>
+    <div id="rf-iconwrap" class="field" style="width:110px"><label for="rf-icon">Icon</label><input id="rf-icon" value="${esc(r.icon||"")}" maxlength="4" style="text-align:center;font-size:1.4rem"></div>
+    <label class="row" style="font-weight:800"><input type="checkbox" id="rf-once" ${r.once?"checked":""} style="width:24px;height:24px"> One time only (like a badge to collect)</label>
+    <div class="pinerr" id="rf-err"></div>
+    <div class="row" style="justify-content:flex-end"><button class="btn" id="rf-cancel">Cancel</button><button class="btn primary" id="rf-save">Save reward</button></div>`, sh=>{
+    const kindSel = sh.querySelector("#rf-kind");
+    const draw = ()=>{
+      const isBadge = kindSel.value==="badge";
+      sh.querySelector("#rf-badge").style.display = isBadge?"grid":"none";
+      sh.querySelector("#rf-iconwrap").style.display = isBadge?"none":"grid";
+      sh.querySelector("#rf-colors").innerHTML = COLORS.map(c=>`<button type="button" data-c="${c}" aria-label="Colour ${c}" aria-pressed="${r.badge.color===c}" style="background:${c}"></button>`).join("");
+      sh.querySelector("#rf-glyphs").innerHTML = GLYPHS.map(g=>`<button type="button" data-g="${g}" aria-label="${g}" aria-pressed="${r.badge.glyph===g}">${badgeSvg({color:r.badge.color,glyph:g},34)}</button>`).join("");
+      sh.querySelector("#rf-prev").innerHTML = badgeSvg(r.badge, 96);
+    };
+    draw();
+    kindSel.onchange = ()=>{ if(kindSel.value==="badge") sh.querySelector("#rf-once").checked = true; draw(); };
+    sh.querySelector("#rf-colors").onclick = e=>{ const b=e.target.closest("[data-c]"); if(b){ r.badge.color=b.dataset.c; draw(); } };
+    sh.querySelector("#rf-glyphs").onclick = e=>{ const b=e.target.closest("[data-g]"); if(b){ r.badge.glyph=b.dataset.g; draw(); } };
+    sh.querySelector("#rf-cancel").onclick = closeModal;
+    sh.querySelector("#rf-save").onclick = ()=>{
+      const name = sh.querySelector("#rf-name").value.trim(); const cost = Number(sh.querySelector("#rf-cost").value);
+      if(!name){ sh.querySelector("#rf-err").textContent="Give the reward a name"; return; }
+      if(!(cost>0)){ sh.querySelector("#rf-err").textContent="Set a cost of at least 1 star"; return; }
+      const kind = kindSel.value;
+      const order = isNew ? (Math.max(0,...state.rewards.map(x=>x.order||0))+1) : r.order;
+      const obj = {id:r.id, name, kind, cost, once:sh.querySelector("#rf-once").checked, order};
+      if(kind==="badge") obj.badge = {color:r.badge.color, glyph:r.badge.glyph}; else obj.icon = sh.querySelector("#rf-icon").value.trim()||"🎁";
+      store.put("rewards", obj); closeModal(); toast(isNew?"Reward added":"Reward saved");
+    };
+  });
+}
+function settingsForm(){
+  const s = S();
+  openModal(`<h2>Basics</h2>
+    <div class="field"><label for="sf-name">Child's name</label><input id="sf-name" value="${esc(s.childName)}" autofocus></div>
+    <div class="row"><div class="field" style="flex:1;min-width:140px"><label for="sf-mps">Minutes of screen time per star</label><input id="sf-mps" type="number" min="1" inputmode="numeric" value="${esc(s.minutesPerStar)}"></div>
+    <div class="field" style="flex:1;min-width:140px"><label for="sf-ban">Screen pause for a broken rule (hours)</label><input id="sf-ban" type="number" min="1" inputmode="numeric" value="${esc(s.banHours)}"></div></div>
+    <div class="field"><label for="sf-pen">How the penalty reads</label><input id="sf-pen" value="${esc(s.penaltyText)}"></div>
+    <div class="field"><label for="sf-rem">Reminder to be better</label><input id="sf-rem" value="${esc(s.reminder)}"></div>
+    <div class="field"><label for="sf-rules">House rules (one per line)</label><textarea id="sf-rules">${esc((s.houseRules||[]).join("\n"))}</textarea></div>
+    <div class="field"><label for="sf-pin">Parent PIN (4 to 6 digits)</label><input id="sf-pin" inputmode="numeric" pattern="[0-9]*" maxlength="6" value="${esc(s.pin)}"></div>
+    <p class="small muted" style="margin:0;font-weight:700">The PIN keeps little fingers out of parent controls. It is not a password, so don't reuse one that matters.</p>
+    <div class="pinerr" id="sf-err"></div>
+    <div class="row" style="justify-content:flex-end"><button class="btn" id="sf-cancel">Cancel</button><button class="btn primary" id="sf-save">Save</button></div>`, sh=>{
+    sh.querySelector("#sf-cancel").onclick = closeModal;
+    sh.querySelector("#sf-save").onclick = ()=>{
+      const pin = sh.querySelector("#sf-pin").value.trim();
+      if(!/^\d{4,6}$/.test(pin)){ sh.querySelector("#sf-err").textContent="The PIN needs 4 to 6 digits"; return; }
+      const obj = {
+        childName: sh.querySelector("#sf-name").value.trim()||"My Champ",
+        minutesPerStar: Math.max(1, Number(sh.querySelector("#sf-mps").value)||5),
+        banHours: Math.max(1, Number(sh.querySelector("#sf-ban").value)||24),
+        penaltyText: sh.querySelector("#sf-pen").value.trim()||DEFAULT_SETTINGS.penaltyText,
+        reminder: sh.querySelector("#sf-rem").value.trim(),
+        houseRules: sh.querySelector("#sf-rules").value.split("\n").map(x=>x.trim()).filter(Boolean),
+        pin
+      };
+      store.settings(obj); closeModal(); toast("Saved");
+    };
+  });
+}
+function violationForm(idx){
+  const s = S(); const rules = s.houseRules||[];
+  openModal(`<h2>House rule broken</h2>
+    <div class="field"><label for="vf-rule">Which rule</label><select id="vf-rule">${rules.map((r,i)=>`<option value="${i}" ${i===idx?"selected":""}>${esc(r)}</option>`).join("")}</select></div>
+    <div class="field"><label for="vf-note">What happened (optional)</label><input id="vf-note" placeholder="A short note to talk through later"></div>
+    <p style="margin:0;font-weight:700">This pauses screen time for ${Number(s.banHours)||24} hours, until ${esc(new Date(Date.now()+(Number(s.banHours)||24)*3600e3).toLocaleString("en-SG",{weekday:"short",hour:"numeric",minute:"2-digit"}))}.</p>
+    <div class="row" style="justify-content:flex-end"><button class="btn" id="vf-cancel">Cancel</button><button class="btn bad" id="vf-ok">Start the pause</button></div>`, sh=>{
+    sh.querySelector("#vf-cancel").onclick = closeModal;
+    sh.querySelector("#vf-ok").onclick = ()=>{
+      const r = rules[+sh.querySelector("#vf-rule").value] || "House rule";
+      store.put("events", {id:uid("e"), type:"violation", ts:Date.now(), rule:r, note:sh.querySelector("#vf-note").value.trim(), stars:0, by:"parent"});
+      closeModal(); toast("Screen time paused");
+    };
+  });
+}
+function screenForm(){
+  const t = totals(); const avail = t.balance*mps();
+  let minutes = 30;
+  openModal(`<h2>Screen time used</h2><p style="margin:0;font-weight:700">Available: ${fmtMin(avail)}</p>
+    <div class="presets">${[10,15,30,45,60,90].map(m=>`<button class="btn" data-m="${m}">${m} min</button>`).join("")}</div>
+    <div class="field"><label for="sc-min">Minutes used</label><input id="sc-min" type="number" min="1" inputmode="numeric" value="30" autofocus></div>
+    <div class="pinerr" id="sc-warn"></div>
+    <div class="row" style="justify-content:flex-end"><button class="btn" id="sc-cancel">Cancel</button><button class="btn primary" id="sc-ok">Take from the bank</button></div>`, sh=>{
+    const inp = sh.querySelector("#sc-min");
+    const check = ()=>{ minutes = Number(inp.value)||0; sh.querySelector("#sc-warn").textContent = minutes>avail ? `That's ${fmtMin(minutes-avail)} more than he has. The balance will go below zero.` : ""; };
+    sh.querySelector(".presets").onclick = e=>{ const b=e.target.closest("[data-m]"); if(b){ inp.value=b.dataset.m; check(); } };
+    inp.oninput = check; check();
+    sh.querySelector("#sc-cancel").onclick = closeModal;
+    sh.querySelector("#sc-ok").onclick = ()=>{
+      if(!(minutes>0)) return;
+      store.put("events", {id:uid("e"), type:"screen", ts:Date.now(), minutes, stars:-(minutes/mps()), by:"parent"});
+      closeModal(); toast(`${fmtMin(minutes)} taken from the screen time bank`);
+    };
+  });
+}
+function adjustForm(){
+  openModal(`<h2>Bonus or penalty</h2>
+    <div class="field"><label for="ad-st">Stars (use a minus number for a penalty)</label><input id="ad-st" type="number" step="0.5" inputmode="decimal" value="1" autofocus></div>
+    <div class="field"><label for="ad-r">Reason</label><input id="ad-r" placeholder="e.g. Helped grandma without being asked"></div>
+    <div class="row" style="justify-content:flex-end"><button class="btn" id="ad-cancel">Cancel</button><button class="btn primary" id="ad-ok">Save</button></div>`, sh=>{
+    sh.querySelector("#ad-cancel").onclick = closeModal;
+    sh.querySelector("#ad-ok").onclick = ()=>{
+      const st = Number(sh.querySelector("#ad-st").value); if(!isFinite(st)||st===0) return;
+      store.put("events", {id:uid("e"), type:"adjust", ts:Date.now(), stars:st, reason:sh.querySelector("#ad-r").value.trim(), by:"parent"});
+      closeModal(); if(st>0) confetti(); toast(`${signed(st)} ★ saved`);
+    };
+  });
+}
+async function newSeason(){
+  const t = totals();
+  const badges = state.rewards.filter(r=>r.once && badgeStatus(r.id)==="given").map(r=>r.id);
+  const pending = state.events.filter(e=>e.type==="claim" && e.status==="pending").map(e=>e.id);
+  const ban = activeBan();
+  const keep = new Set(pending.concat(ban?[ban.ev.id]:[]));
+  // pending claims and an active pause stay, so carry the balance without counting pending claims twice
+  const pendingStars = state.events.filter(e=>keep.has(e.id)).reduce((a,e)=>a+(Number(e.stars)||0),0);
+  const toDelete = state.events.filter(e=>!keep.has(e.id)).map(e=>e.id);
+  for(const id of toDelete){ await store.del("events", id); }
+  await store.put("events", {id:uid("e"), type:"carry", ts:Date.now(), stars:round1(t.balance - pendingStars), badges, by:"parent"});
+  toast("New season started");
+}
+
+function lastBackupText(){
+  let t=null; try{ t=Number(localStorage.getItem(LS_KEY+".lastBackup"))||null; }catch(e){}
+  return t ? ` Last backup: ${esc(fmtTime(t))}.` : " No backup saved yet.";
+}
+function backup(){
+  const data = {app:"star-scoreboard", version:1, savedAt:Date.now(), goals:state.goals, rewards:state.rewards, events:state.events, settings:state.settings};
+  const blob = new Blob([JSON.stringify(data,null,1)], {type:"application/json"});
+  const name = "scoreboard-backup-"+dayKey(Date.now())+".json";
+  const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = name;
+  document.body.appendChild(a); a.click(); a.remove(); setTimeout(()=>URL.revokeObjectURL(a.href), 4000);
+  try{ localStorage.setItem(LS_KEY+".lastBackup", String(Date.now())); }catch(e){}
+  render(); toast("Backup saved as "+name);
+}
+document.addEventListener("change", e=>{
+  if(e.target.id!=="restoreFile" || !e.target.files || !e.target.files[0]) return;
+  const file = e.target.files[0];
+  file.text().then(txt=>{
+    let d; try{ d = JSON.parse(txt); }catch(err){ toast("That file isn't a scoreboard backup"); return; }
+    if(!d || d.app!=="star-scoreboard" || !Array.isArray(d.events)){ toast("That file isn't a scoreboard backup"); return; }
+    confirmBox("Restore this backup?", `Backup from ${esc(fmtTime(d.savedAt||Date.now()))} with ${d.events.length} history entries. It replaces everything on this device.`, "Restore", "bad", ()=>{
+      state.goals = d.goals||[]; state.rewards = d.rewards||[]; state.events = d.events||[]; state.settings = d.settings||null;
+      saveLocal(); render(); toast("Backup restored");
+    });
+  });
+});
+document.addEventListener("click", e=>{
+  const el = e.target.closest("[data-act]"); if(!el) return;
+  state.lastTouch = Date.now();
+  const act = el.dataset.act, id = el.dataset.id;
+  switch(act){
+    case "mode": if(state.parent){ state.parent=false; render(); toast("Back to kid mode"); } else pinModal(); break;
+    case "unlock": pinModal(); break;
+    case "log-goal": {
+      const g = state.goals.find(x=>x.id===id); if(!g) return;
+      if(g.logger==="parent") requireParent(()=>logGoal(g, +el.dataset.i)); else logGoal(g, +el.dataset.i);
+      break; }
+    case "violation": requireParent(()=>violationForm(+el.dataset.i)); break;
+    case "lift-ban": requireParent(()=>confirmBox("Lift the screen pause?","Screen time will be available again right away.","Lift pause","primary",()=>store.patch("events", id, {lifted:true}))); break;
+    case "screen-log": requireParent(screenForm); break;
+    case "adjust": requireParent(adjustForm); break;
+    case "claim": {
+      const r = state.rewards.find(x=>x.id===id); if(!r) return;
+      confirmBox(`Claim ${r.name}?`, `This spends <b>${fmtStars(r.cost)} ★</b> (${fmtMin(r.cost*mps())} of screen time). A parent then hands it over.`, "Yes, claim it", "primary", ()=>{
+        store.put("events", {id:uid("e"), type:"claim", ts:Date.now(), rewardId:r.id, name:r.name, kind:r.kind, stars:-Number(r.cost), status:"pending", by:state.parent?"parent":"child"});
+        confetti(); toast(`Claimed ${r.name}!`);
+      });
+      break; }
+    case "claim-give": requireParent(()=>{ store.patch("events", id, {status:"given", givenTs:Date.now()}); toast("Marked as given"); }); break;
+    case "claim-refund": requireParent(()=>confirmBox("Refund this reward?","The stars go back to the balance.","Refund","primary",()=>store.patch("events", id, {status:"refused"}))); break;
+    case "del-event": requireParent(()=>confirmBox("Remove this entry?","Use this to fix a mistake. Stars from it are taken back out of the totals.","Remove","bad",()=>store.del("events", id))); break;
+    case "goal-add": requireParent(()=>goalForm(null)); break;
+    case "goal-edit": requireParent(()=>goalForm(state.goals.find(x=>x.id===id))); break;
+    case "goal-del": requireParent(()=>{ const g=state.goals.find(x=>x.id===id); if(g) confirmBox(`Delete "${g.name}"?`,"Past stars from it stay in the history.","Delete","bad",()=>store.del("goals", id)); }); break;
+    case "goal-move": requireParent(async ()=>{
+      const list = sortedGoals(); const i = list.findIndex(x=>x.id===id); const j = i + Number(el.dataset.d);
+      if(i<0||j<0||j>=list.length) return;
+      const a = list[i], b = list[j]; const oa = a.order||i+1, ob = b.order||j+1;
+      await store.put("goals", Object.assign({}, a, {order: ob===oa?ob+Number(el.dataset.d):ob}));
+      await store.put("goals", Object.assign({}, b, {order: oa}));
+    }); break;
+    case "reward-add": requireParent(()=>rewardForm(null)); break;
+    case "reward-edit": requireParent(()=>rewardForm(state.rewards.find(x=>x.id===id))); break;
+    case "reward-del": requireParent(()=>{ const r=state.rewards.find(x=>x.id===id); if(r) confirmBox(`Delete "${r.name}"?`,"Claims already made stay in the history.","Delete","bad",()=>store.del("rewards", id)); }); break;
+    case "settings-edit": requireParent(settingsForm); break;
+    case "backup": requireParent(backup); break;
+    case "restore": requireParent(()=>{ const f=$("#restoreFile"); f.value=""; f.click(); }); break;
+    case "new-season": requireParent(()=>confirmBox("Start a new season?","History and trends are cleared. The star balance, collected badges, waiting rewards and any screen pause are kept.","Start new season","primary",newSeason)); break;
+    case "filter": state.logFilter = el.dataset.f; render(); break;
+  }
+});
+
+/* ---------- routing ---------- */
+const TABS = ["board","rewards","trends","log","manage"];
+function route(){ const h = location.hash.replace("#",""); state.tab = TABS.includes(h)?h:"board"; render(); window.scrollTo(0,0); }
+window.addEventListener("hashchange", route);
+document.addEventListener("pointerdown", ()=>{ state.lastTouch = Date.now(); }, {passive:true});
+
+/* ---------- boot ---------- */
+route();
+(async function boot(){
+  startLocal();
+  try{ if(navigator.storage && navigator.storage.persist) await navigator.storage.persist(); }catch(e){}
+})();
+})();
+</script>
+</body>
+</html>
